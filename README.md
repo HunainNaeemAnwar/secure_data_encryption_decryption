@@ -1,23 +1,29 @@
-🔐 Secure Data Vault
-A Streamlit-based app to securely store and retrieve encrypted data using hashed passkeys and Fernet encryption.
-Features include brute-force protection, timed lockout, and reauthorization to maintain strong access control.
+# 🔐 Secure Data Vault
 
-🚀 Features
-🔒 AES-based encryption using cryptography.Fernet
+A secure, local Streamlit application for storing and retrieving encrypted data using user-defined passkeys.  
+It includes built-in lockout protection and reauthorization features to prevent brute-force attacks and unauthorized access.
 
-🔐 Passkey hashing with SHA-256
+---
 
-🧠 Smart lockout system after 3 failed attempts
+## 📌 Features
 
-🔓 Reauthorization option to unlock after lockout
+- **Fernet Encryption** (AES-128 based) for secure data handling
+- **SHA-256 Hashing** for passkeys
+- **3-Attempt Lockout System** to prevent brute-force access
+- **Reauthorization Option** after lockout timeout
+- **Local JSON Storage** – no external databases required
+- **Clean Streamlit UI** for easy use
 
-📁 JSON-based local data storage (no external DBs)
+---
 
-🧠 Simple UI with Streamlit
+## 🛠️ Requirements
 
-📦 Requirements
-Python 3.8+
+- Python 3.8 or above  
+- Libraries:
+  - `streamlit`
+  - `cryptography`
 
-streamlit
+Install dependencies:
 
-cryptography
+```bash
+pip install streamlit cryptography
